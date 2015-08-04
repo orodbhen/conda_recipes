@@ -15,7 +15,7 @@ requirements:
         - qt >=4.8
         - ffmpeg
     run:
-        - gcc >=4.8.2.99
+        - libgcc >=4.8.4
         - qt >=4.8
         - ffmpeg
 
