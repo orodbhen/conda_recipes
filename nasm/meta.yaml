@@ -1,0 +1,16 @@
+package:
+    name: nasm
+    version: "2.11.08"
+
+source:
+    fn: nasm-2.11.08.tar.xz
+    url: http://www.nasm.us/pub/nasm/releasebuilds/2.11.08/nasm-2.11.08.tar.xz
+    md5: 0d461a085b088a14dd6628c53be1ce28
+
+build:
+    number: 0
+
+about:
+    home: http://www.nasm.us/
+    license: BSD
+    summary: "An 80x86 assembler designed for portability and modularity."

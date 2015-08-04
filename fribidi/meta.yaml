@@ -1,0 +1,16 @@
+package:
+    name: fribidi
+    version: "0.19.6"
+
+source:
+    fn: fribidi-0.19.6.tar.bz2
+    url: http://fribidi.org/download/fribidi-0.19.6.tar.bz2
+    md5: ce93d862344991173dabb609bf93ca1d
+
+build:
+    number: 0
+
+about:
+    home: http://fribidi.org
+    license: LGPL2
+    summary: "Contains functions used to implement the Unicode Bidirectional Algorithm."

@@ -1,0 +1,25 @@
+package:
+    name: simple-screen-recorder
+    version: "0.3.3"
+
+source:
+    git_url: https://github.com/MaartenBaert/ssr.git 
+    git_tag: "0.3.3"
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - gcc >=4.8.2.99
+        - qt >=4.8
+        - ffmpeg
+    run:
+        - gcc >=4.8.2.99
+        - qt >=4.8
+        - ffmpeg
+
+about:
+    home: http://www.maartenbaert.be/simplescreenrecorder/
+    license: GPL3
+    summary: "A screen recorder for Linux"

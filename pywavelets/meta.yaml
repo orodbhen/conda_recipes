@@ -1,0 +1,64 @@
+package:
+  name: pywavelets
+  version: "0.2.3"
+
+source:
+    #  fn: PyWavelets-0.2.2.zip
+    #  url: https://pypi.python.org/packages/source/P/PyWavelets/PyWavelets-0.2.2.zip
+    # md5: 77d3528e59058935d23ff7e2f02c4968
+  git_tag: pywavelets-API-break
+  git_url: https://github.com/rgommers/pywt.git
+
+#  patches:
+   # List any patch files here
+   # - fix.patch
+
+# build:
+  # preserve_egg_dir: True
+  # entry_points:
+    # Put any entry points (scripts to be generated automatically) here. The
+    # syntax is module:function.  For example
+    #
+    # - pywavelets = pywavelets:main
+    #
+    # Would create an entry point called pywavelets that calls pywavelets.main()
+
+
+  # If this is a new build for the same version, increment the build
+  # number. If you do not include this key, it defaults to 0.
+  # number: 1
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - numpy
+
+test:
+  # Python imports
+  imports:
+    - pywt
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://www.pybytes.com/pywavelets/
+  license: MIT License
+  summary: 'PyWavelets, wavelet transform module'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

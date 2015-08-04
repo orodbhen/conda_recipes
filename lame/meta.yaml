@@ -1,0 +1,23 @@
+package:
+    name: lame
+    version: "3.99.5"
+
+source:
+    fn: lame-3.99.5.tar.gz
+    url: http://downloads.sourceforge.net/lame/lame-3.99.5.tar.gz
+    md5: 84835b313d4a8b68f5349816d33e07ce
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - nasm >=2.11.08
+
+    run:
+        - nasm >=2.11.08
+
+about:
+    home: http://lame.sourceforge.net/
+    license: LGPL
+    summary: "Provides the functions necessary to convert raw PCM and WAV files to MP3 files."

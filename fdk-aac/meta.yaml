@@ -1,0 +1,16 @@
+package:
+    name: fdk-aac
+    version: "0.1.4"
+
+source:
+    fn: fdk-aac-0.1.4.tar.gz
+    url: http://downloads.sourceforge.net/opencore-amr/fdk-aac-0.1.4.tar.gz
+    md5: e274a7d7f6cd92c71ec5c78e4dc9f8b7
+
+build:
+    number: 0
+
+about:
+    home: http://sourceforge.net/projects/opencore-amr/
+    license: Apache-2
+    summary: "Provides the functions used to encode audio in AAC format."

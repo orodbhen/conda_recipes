@@ -1,0 +1,28 @@
+package:
+    name: libass
+    version: "0.12.1"
+
+source:
+    fn: libass-0.12.1.tar.xz
+    url: https://github.com/libass/libass/releases/download/0.12.1/libass-0.12.1.tar.xz
+    md5: dfdcd8b4fbb6a8211db8040b10aa2070
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - freetype >=2.5.2
+        - fribidi >=0.19.6
+        - fontconfig >=2.11.1
+        - libpng
+    run: 
+        - freetype >=2.5.2
+        - fribidi >=0.19.6
+        - fontconfig >=2.11.1
+        - libpng
+
+about:
+    home: https://github.com/libass
+    license: BSD3 
+    summary: "Provides the functions used to render ASS/SSA subtitle format"
