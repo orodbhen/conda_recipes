@@ -5,9 +5,6 @@ mkdir -vp ${PREFIX}/bin;
 ARCH="$(uname 2>/dev/null)"
 
 common() {
-
-    chmod +x configure
-
     make distclean 2> /dev/null
     
     autoreconf -fiv || return 1
