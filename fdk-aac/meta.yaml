@@ -13,6 +13,7 @@ build:
 requirements:
     build:
         - automake
+        - autoconf
 
 about:
     home: http://sourceforge.net/projects/opencore-amr/

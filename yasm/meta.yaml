@@ -12,6 +12,7 @@ requirements:
     build:
         - python
         - automake
+        - autoconf
 
     run:
         - python
