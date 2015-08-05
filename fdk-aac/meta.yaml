@@ -14,6 +14,7 @@ requirements:
     build:
         - automake
         - autoconf
+        - libtool
 
 about:
     home: http://sourceforge.net/projects/opencore-amr/

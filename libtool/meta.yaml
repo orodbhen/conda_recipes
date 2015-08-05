@@ -1,0 +1,22 @@
+package:
+    name: libtool 
+    version: "2.4.6"
+
+source:
+    fn: libtool-2.4.6.tar.xz
+    url: ftp://ftp.gnu.org/pub/gnu/libtool/libtool-2.4.6.tar.xz
+    md5: 1bfb9b923f2c1339b4d2ce1807064aa5
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - gcc >=4.8.2
+    run:
+        - libgcc >=4.8.4
+
+about:
+    home: "http://www.gnu.org/software/libtool" 
+    license: GPL
+    summary: "A generic library support script"
