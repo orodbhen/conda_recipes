@@ -2,29 +2,28 @@
 
 ARCH="$(uname 2>/dev/null)"
 
-common() {
 
+LinuxInstallation() {
     chmod +x configure
-
-    make distclean 2> /dev/null
     
     ./configure --prefix=${PREFIX} --disable-examples --enable-shared --disable-static || return 1
                 
     make || return 1
     make install || return 1
-    make distclean
     
     return 0
 }
 
 
-LinuxInstallation() {
-    common || return 1
-}
-
-
 OSXInstallation() {
-    common || return 1
+    chmod +x configure
+    
+    ./configure --prefix=${PREFIX} --disable-examples || return 1
+                
+    make || return 1
+    make install || return 1
+    
+    return 0
 }
 
 
