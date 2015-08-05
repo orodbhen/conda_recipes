@@ -2,7 +2,7 @@
 
 ARCH="$(uname 2>/dev/null)"
 
-LinuxInstallation() {
+common() {
 
     chmod +x configure
 
@@ -19,9 +19,22 @@ LinuxInstallation() {
 }
 
 
+LinuxInstallation() {
+    common || return 1
+}
+
+
+OSXInstallation() {
+    common || return 1
+}
+
+
 case ${ARCH} in
     'Linux')
         LinuxInstallation || exit 1
+        ;;
+    'Darwin')
+        OSXInstallation || exit 1
         ;;
     *)
         echo -e "Unsupported architecture: ${ARCH}"
