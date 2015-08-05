@@ -1,0 +1,16 @@
+package:
+    name: autoconf 
+    version: "2.69"
+
+source:
+    fn: autoconf-2.69.tar.xz
+    url: ftp://ftp.gnu.org/pub/gnu/autoconf/autoconf-2.69.tar.xz
+    md5: 50f97f4159805e374639a73e2636f22e 
+
+build:
+    number: 0
+
+about:
+    home: "http://www.gnu.org/software/autoconf" 
+    license: GPL
+    summary: "A GNU tool for automatically configuring source codex"
