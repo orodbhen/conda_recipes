@@ -1,0 +1,20 @@
+package:
+    name: automake 
+    version: "1.15"
+
+source:
+    fn: automake-1.15.tar.xz
+    url: ftp://ftp.gnu.org/pub/gnu/automake/automake-1.15.tar.xz
+    md5: 9a1ddb0e053474d9d1105cfe39b0c48d
+
+build:
+    number: 0
+
+requirements:
+    build:
+        - autoconf
+
+about:
+    home: "http://www.gnu.org/software/automake" 
+    license: GPL
+    summary: "A GNU tool for automatically creating Makefiles"
