@@ -10,6 +10,10 @@ source:
 build:
     number: 0
 
+requirements:
+    build:
+        - autoconf
+
 about:
     home: http://sourceforge.net/projects/opencore-amr/
     license: Apache-2
